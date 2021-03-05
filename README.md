@@ -5,7 +5,7 @@
 > (Jihye-Back)
 
 - You can download exe file. ([snu test director - link](https://drive.google.com/open?id=162xHLRyLbKLKKhLRr95UWrWoWnFIulFJ&authuser=100jihye%40snu.ac.kr&usp=drive_fs))
-
+- 아이폰 모바일 클라이언트 ([link](https://github.com/happy-jihye/ios-rtmp-client))
 
 
 ---
