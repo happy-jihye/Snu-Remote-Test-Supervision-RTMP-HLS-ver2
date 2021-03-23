@@ -1,8 +1,8 @@
 # Snu Remote Test Supervision (Ver.2)
 
-> #### 원격 시험 감독 - 감독관용 뷰어
+> #### 원격 시험 감독 - [감독관용 뷰어](https://happy-jihye.github.io/snu/snu-test-director/)
 >
-> (Jihye-Back)
+> developer : [Jihye-Back](https://github.com/happy-jihye)
 
 - You can download exe file. ([snu test director - link](https://drive.google.com/open?id=162xHLRyLbKLKKhLRr95UWrWoWnFIulFJ&authuser=100jihye%40snu.ac.kr&usp=drive_fs))
 - [version 1](https://github.com/happy-jihye/Snu-Remote-Test-Supervision-RTMP-HLS-ver1)
