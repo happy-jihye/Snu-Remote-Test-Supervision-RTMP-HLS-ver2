@@ -6,7 +6,7 @@
 
 - You can download exe file. ([snu test director - link](https://drive.google.com/open?id=162xHLRyLbKLKKhLRr95UWrWoWnFIulFJ&authuser=100jihye%40snu.ac.kr&usp=drive_fs))
 - [version 1](https://github.com/happy-jihye/Snu-Remote-Test-Supervision-RTMP-HLS-ver1)
-- [IOS mobile client](https://github.com/happy-jihye/ios-rtmp-client)
+- [IOS mobile client](https://github.com/happy-jihye/snu-ios-rtmp-client)
 - [RestAPI](https://github.com/younghoSNU/restapi)
 
 ---
