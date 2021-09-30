@@ -1,5 +1,34 @@
 # Snu Remote Test Supervision (Ver.2)
 
+> This program is a supervisor app that remotely proctor exams in the contact-free era. Supervisors can schedule exams, register students to take tests, and supervise many students in real-time. In addition, after the test, they can re-watch the video of the student who took the test.
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/78718131/107191555-aa69ce00-6a2f-11eb-9b76-7271806affab.png" width=700 />
+</p>
+
+
+There are three main functions of the program.
+
+
+#### (1) Real-Time Streaming: RTMP(Real Time Messaging Protocol) Live Streaming 
+
+Live streaming is a function to make supervisors oversee the students taking exams in real-time. We used the RTMP protocol method because real-time communication was required. And we referenced these repos.
+
+- [unosquare/ffmediaelement](https://github.com/unosquare/ffmediaelement)
+- [Ruslan-B/FFmpeg.AutoGen](https://github.com/Ruslan-B/FFmpeg.AutoGen)
+
+#### (2) Review Test : HLS(HTTP Live Streaming) Player
+
+This program allows supervisors to re-watch the students who took the test in the past. If the students violate the honors code, supervisors may check the recorded video later. We adopted the HLS protocol method because it enables freely move the playtime of the video at any time we want.
+
+#### (3) Other functions
+
+We implemented various functions necessary for the test supervisor, such as membership registration and login, password change, test scheduling, and student information registration.
+
+---
+
+
+
 > #### 원격 시험 감독 - [감독관용 뷰어](https://happy-jihye.github.io/snu/snu-test-director/)
 >
 > developer : [Jihye-Back](https://github.com/happy-jihye)
@@ -8,18 +37,6 @@
 - [version 1](https://github.com/happy-jihye/Snu-Remote-Test-Supervision-RTMP-HLS-ver1)
 - [IOS mobile client](https://github.com/happy-jihye/snu-ios-rtmp-client)
 - [RestAPI](https://github.com/younghoSNU/restapi)
-
----
-
-## ⭐ 주요 과제 및 흐름도
-
-<img src="https://user-images.githubusercontent.com/78718131/107191555-aa69ce00-6a2f-11eb-9b76-7271806affab.png" alt="Untitled" style="zoom:67%;" />
-
-#### (1) RTMP(Real Time Messaging Protocol) Live Streaming 
-
-#### (2) Review Test : HLS(HTTP Live Streaming) Player
-
-#### (3) Login, change password, create account ... 
 
 
 
@@ -110,13 +127,19 @@
   curl -X POST http://XXXX/superv_endpoint_pre -d token=
   ```
 
-- 예정된 시험 목록을 받아오면 다음과 같이 list up 합니다.<img src="https://user-images.githubusercontent.com/78718131/107193390-26651580-6a32-11eb-9bf6-23957d0fd3f2.png" alt="Untitled 4" style="zoom: 67%;" />
+- 예정된 시험 목록을 받아오면 다음과 같이 list up 합니다.
+
+<p align="center">
+    <img src='https://user-images.githubusercontent.com/78718131/107193390-26651580-6a32-11eb-9bf6-23957d0fd3f2.png' width = '700' >
+</p>
 
 
 
 ## [(2) Live Streaming](https://github.com/happy-jihye/Snu-Remote-Test-Supervision-RTMP-HLS-ver2/tree/master/FFmeBasicSample/Live%20Viewer)
 
-![SE-1a92a9d3-7c42-4d06-8b6e-35df3c2aff7b](https://user-images.githubusercontent.com/78718131/107308275-b1461e80-6acb-11eb-9b41-6a49d9f88712.png)
+<p align="center">
+    <img src='https://user-images.githubusercontent.com/78718131/107308275-b1461e80-6acb-11eb-9b41-6a49d9f88712.png' width = '700' >
+</p>
 
 - 스케줄링된 시험을 누른 후 감독관 번호를 입력하면, 라이브 스트리밍을 볼 수 있습니다. 
 
@@ -167,10 +190,9 @@
 ## [(3) Review Test](https://github.com/happy-jihye/Snu-Remote-Test-Supervision-RTMP-HLS-ver2/tree/master/FFmeBasicSample/Review%20Viewer) (HLS Protocol)
 
 
-
-![SE-9b34cdec-fa16-4668-9c43-ed4ece5d06a1](https://user-images.githubusercontent.com/78718131/107308267-adb29780-6acb-11eb-84c8-049a7f2b7c02.png)
-
-
+<p align="center">
+    <img src='https://user-images.githubusercontent.com/78718131/107308267-adb29780-6acb-11eb-84c8-049a7f2b7c02.png' width = '700' >
+</p>
 
 - [HLS (HTTP Live Streaming, HLS)](https://ko.wikipedia.org/wiki/HTTP_%EB%9D%BC%EC%9D%B4%EB%B8%8C_%EC%8A%A4%ED%8A%B8%EB%A6%AC%EB%B0%8D) 프로토콜을 통해 AWS S3 클라우드에 저장되어있는 영상을 로드하여 재생하는 부분을 구현하였습니다.
 
